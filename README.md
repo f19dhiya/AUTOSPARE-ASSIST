@@ -10,10 +10,11 @@ To run the application on your laptop:
 
 ```powershell
 # 1. Open PowerShell and navigate to the project directory:
-cd "C:\Users\admin\OneDrive\Documents\Desktop\AutoSpare Assist"
+cd frontend
 
 # 2. Launch the development server:
-npm.cmd run dev
+npm install
+npm run dev
 ```
 
 Then open **`http://localhost:5173`** in your browser.
@@ -50,7 +51,7 @@ The system features role-based access control with two operational profiles:
 
 4. **Multi-Mode Checkout Engine**:
    - **Cash Mode**: Automatic tender input with real-time change due calculator.
-   - **UPI Mode**: Dynamic BharatQR generator with simulated webhook confirmation.
+   - **UPI Mode**: Static UPI QR payment with staff verification and optional transaction reference.
    - **Credit Account**: Automatic credit evaluation against customer limit and ₹15,000 threshold.
 
 5. **₹15,000 Credit Control & Locking Mechanism**:
